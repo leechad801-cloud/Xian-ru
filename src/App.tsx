@@ -783,7 +783,10 @@ function App() {
               <button
                 type="button"
                 className="rounded-full border border-white/10 px-5 py-3 text-sm text-zinc-200 transition hover:border-white/30 hover:bg-white/5"
-                onClick={() => setActiveModule('notes')}
+                onClick={() => {
+                  setActiveModule('notes')
+                  setNotesOpen(false)
+                }}
               >
                 去完整笔记页
               </button>
